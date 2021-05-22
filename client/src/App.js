@@ -6,6 +6,7 @@ import Products from "./Components/Products/Products";
 import Categories from "./Components/Categories/Categories";
 import ProductDetails from "./Components/Products/ProductDetails";
 import AllProducts from "./Components/Products/AllProducts";
+import ShopCart from "./Components/ShopCart/ShopCart";
 
 function App() {
     return (
@@ -19,6 +20,10 @@ function App() {
                     <Route exact path="/all/products/:category">
                         <Navigation></Navigation>
                         <AllProducts></AllProducts>
+                    </Route>
+                    <Route exact path="/cart">
+                        <Navigation></Navigation>
+                        <ShopCart></ShopCart>
                     </Route>
                     <Route exact path="/">
                         <Navigation></Navigation>
