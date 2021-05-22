@@ -1,0 +1,100 @@
+.auth {
+    /* The Modal (background) */
+    &__modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+        place-items: center;
+    }
+
+    /* Modal Content */
+
+    /* The Close Button */
+    &__close {
+        color: white;
+        position: absolute;
+        font-size: 30px;
+        font-weight: 400;
+        right: -15px;
+        top: -35px;
+    }
+
+    &__close:hover,
+    &__close:focus {
+        color: gray;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__modal__content {
+        background-color: white;
+        margin: auto;
+        width: 90%;
+        max-width: 400px;
+        height: fit-content;
+        position: relative;
+        &__top {
+            display: flex;
+            > button {
+                flex: 1;
+                text-transform: uppercase;
+                padding: 20px 25px;
+                cursor: pointer;
+                background: none;
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                border: none;
+            }
+            .active {
+                background: whitesmoke;
+            }
+        }
+    }
+    &__form {
+        padding: 30px 40px;
+        form {
+            display: flex;
+            flex-direction: column;
+            input {
+                padding: 15px 25px;
+                margin-bottom: 20px;
+                outline: none;
+                border: 1px solid lightgray;
+                font-size: 16px;
+                &:focus {
+                    background: whitesmoke;
+                }
+            }
+            span {
+                margin-left: 10px;
+                color: gray;
+            }
+            small {
+                color: gray;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                &:hover {
+                    color: black;
+                }
+            }
+            button {
+                padding: 15px 20px;
+                outline: none;
+                border: none;
+                background: black;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
